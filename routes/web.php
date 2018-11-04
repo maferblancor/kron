@@ -28,5 +28,5 @@ Route::prefix('admin')->group(function(){
 
 });
 
-Route::post('/', 'AdminController@logout')->name('admin.logout');
+// Route::post('/', 'AdminController@logout')->name('admin.logout');
 	

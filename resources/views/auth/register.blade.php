@@ -40,6 +40,20 @@
                         </div>
 
                         <div class="form-group row">
+                            <label for="birth_date" class="col-md-4 col-form-label text-md-right">{{ __('Birth date') }}</label>
+
+                            <div class="col-md-6">
+                                <input id="birth_date" type="date" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="birth_date"  required>
+
+                                @if ($errors->has('birth_date'))
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $errors->first('birth_date') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
+                            
+                        <div class="form-group row">
                             <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
 
                             <div class="col-md-6">
