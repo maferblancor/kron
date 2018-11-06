@@ -93,6 +93,14 @@
                     <a href="https://github.com/laravel/laravel">GitHub</a>
                 </div>
             </div>
+
+            <div class="content">
+                <div class="title m-b-md">
+                    Log user
+                </div>
+                    @component('components.who')
+                    @endcomponent    
+            </div>
         </div>
     </body>
 </html>

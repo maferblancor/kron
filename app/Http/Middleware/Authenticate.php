@@ -15,8 +15,6 @@ class Authenticate extends Middleware
     protected function redirectTo($request)
     {
         
-
-
         if(Auth::guard('admin')->check())
         {
             return route('admin.login'); 
@@ -24,30 +22,6 @@ class Authenticate extends Middleware
         else
         {
             return route('login'); 
-        }
-
-    #if ($request->expectsJson()) {
-        #    return response()->json(['message' => 'Unauthenticated.'], 401);
-        #}
-
-        // $login = 'login';
-        // $guards = array_keys(config('auth.guards'));
-        // foreach ($guards as $guard) {
-        //   if(Auth::guard($guard)->check()){
-        //     switch ($guard) {
-        //     case 'admin':
-        //          $login = 'admin.login';
-        //         break;
-        //     case 'web':
-        //         $login = 'login';
-        //         break;
-        //     }
-        //   } 
-        // }
-
-
-                 
-        // return route($login);
-    
+        }    
     }
 }
