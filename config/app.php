@@ -13,7 +13,8 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Laravel'),
+    #'name' => env('APP_NAME', 'Laravel'),
+    'name' => 'KRON',
 
     /*
     |--------------------------------------------------------------------------
@@ -52,7 +53,9 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'http://localhost'),
+    // PLACE THE HOST URL HERE
+
+    'url' => 'http://localhost:8000',  
 
     /*
     |--------------------------------------------------------------------------
@@ -117,7 +120,7 @@ return [
     |
     */
 
-    'key' => env('APP_KEY'),
+    'key' => 'base64:JdrWwxirlhA7uLdIyMVT53CAXbu7GVtSFjzXiG/vBZ0=',
 
     'cipher' => 'AES-256-CBC',
 

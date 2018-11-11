@@ -3,9 +3,11 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Auth;
 
 class AdminController extends Controller
 {
+    
     /**
      * Create a new controller instance.
      *
@@ -23,6 +25,7 @@ class AdminController extends Controller
      */
     public function index()
     {
-        return view('admin');
+        $user = Auth::user();
+        return view('admin.index',compact('user'));
     }
 }

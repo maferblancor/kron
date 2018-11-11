@@ -1,4 +1,10 @@
 @if(count($errors))
+<div class="container">
+	
+<div class="row">
+<div class=' col-md-12'>
+	
+
 		<div class="form-group">
 			<div class="alert alert-danger">
 			<ul>
@@ -8,4 +14,8 @@
 			</ul>
 			</div>
 		</div>
+	
+</div>
+</div>
+</div>
 @endif

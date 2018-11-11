@@ -2,6 +2,7 @@
 
 use Illuminate\Database\Seeder;
 
+
 class DatabaseSeeder extends Seeder
 {
     /**
@@ -11,6 +12,14 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // $this->call(UsersTableSeeder::class);
+        $this->call(\UserSeeder::class);
+        $this->call(\AdminSeeder::class);
+        $this->call(\PostSeeder::class);
+
+        #run :composer dump-autoload
+
+        //php artisan db:seed ->loads all DatabaseSeeder
+
+        //php artisan db:seed --class=UsersTableSeeder ->Loads specific seeder
     }
 }

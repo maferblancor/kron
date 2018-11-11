@@ -46,5 +46,7 @@ class Admin extends Authenticatable
         #php artisan make:notification AdminResetPasswordNotification for create the notification
     }
 
+    
+
 
 }
